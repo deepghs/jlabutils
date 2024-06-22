@@ -1209,9 +1209,9 @@ fabric.properties
 !/docs/source/_static/**/*
 /docs/source/**/*.result.ipynb
 /cartpole_dqn_*
-/jutils/**/*.json
-/jutils/**/*.yaml
-/jutils/**/*.yml
+/jlabutils/**/*.json
+/jlabutils/**/*.yaml
+/jlabutils/**/*.yml
 /extra
 /resource/yolort/*
 !/resource/yolort/Makefile
@@ -1224,4 +1224,4 @@ fabric.properties
 /runs
 /YOLOv8
 .benchmarks
-!/jutils/utils/irregular_repo.json
+!/jlabutils/utils/irregular_repo.json

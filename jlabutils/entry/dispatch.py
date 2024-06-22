@@ -41,6 +41,6 @@ def print_version(ctx: Context, param: Option, value: bool) -> None:
 @click.group(context_settings=CONTEXT_SETTINGS, help=__DESCRIPTION__)
 @click.option('-v', '--version', is_flag=True,
               callback=print_version, expose_value=False, is_eager=True,
-              help="Show jutils' version information.")
-def jutilcli():
+              help="Show jlabutils' version information.")
+def jlabutilcli():
     pass  # pragma: no cover

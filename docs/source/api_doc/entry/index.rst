@@ -1,9 +1,9 @@
-jutils.entry
+jlabutils.entry
 =====================
 
-.. currentmodule:: jutils.entry
+.. currentmodule:: jlabutils.entry
 
-.. automodule:: jutils.entry
+.. automodule:: jlabutils.entry
 
 
 .. toctree::

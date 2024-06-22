@@ -5,8 +5,8 @@ from distutils.core import setup
 
 from setuptools import find_packages
 
-_MODULE_NAME = "jutils"
-_PACKAGE_NAME = 'jutils'
+_MODULE_NAME = "jlabutils"
+_PACKAGE_NAME = 'jlabutils'
 
 here = os.path.abspath(os.path.dirname(__file__))
 meta = {}
@@ -48,7 +48,7 @@ setup(
     author_email=meta['__AUTHOR_EMAIL__'],
     license='Apache License, Version 2.0',
     keywords='Utilities of images.',
-    url='https://github.com/deepghs/jutils',
+    url='https://github.com/deepghs/jlabutils',
 
     # environment
     python_requires=">=3.8",
@@ -69,7 +69,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'jutils=jutils.entry:jutilscli'
+            'jlabutils=jlabutils.entry:jlabutilscli'
         ]
     },
 )

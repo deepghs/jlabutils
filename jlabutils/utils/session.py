@@ -17,7 +17,7 @@ Overview:
     Contains utilities to handle HTTP requests in Huggingface Hub.
 
     Mostly copied from huggingface_hub library version 0.23.1,
-    some extra code is added to fit the requirements of jutils.
+    some extra code is added to fit the requirements of jlabutils.
 """
 
 import os

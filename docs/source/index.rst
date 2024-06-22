@@ -1,10 +1,10 @@
-Welcome to jutils's Documentation
+Welcome to jlabutils's Documentation
 =========================================================
 
 Overview
 -------------
 
-``jutils`` is a module with useful utilities for jupyterlab.
+``jlabutils`` is a module with useful utilities for jupyterlab.
 
 .. toctree::
     :maxdepth: 2

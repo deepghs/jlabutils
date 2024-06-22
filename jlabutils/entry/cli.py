@@ -1,8 +1,8 @@
-from .dispatch import jutilcli
+from .dispatch import jlabutilcli
 
 _DECORATORS = [
 ]
 
-cli = jutilcli
+cli = jlabutilcli
 for deco in _DECORATORS:
     cli = deco(cli)

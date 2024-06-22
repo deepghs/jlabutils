@@ -9,7 +9,7 @@ DIST_DIR      := ${PROJ_DIR}/dist
 TEST_DIR      := ${PROJ_DIR}/test
 TESTFILE_DIR  := ${TEST_DIR}/testfile
 DATASET_DIR   := ${TESTFILE_DIR}/dataset
-SRC_DIR       := ${PROJ_DIR}/jutils
+SRC_DIR       := ${PROJ_DIR}/jlabutils
 TEMPLATES_DIR := ${PROJ_DIR}/templates
 RESOURCE_DIR  := ${PROJ_DIR}/resource
 
@@ -22,10 +22,10 @@ COV_TYPES ?= xml term-missing
 package:
 	$(PYTHON) -m build --sdist --wheel --outdir ${DIST_DIR}
 build:
-	pyinstaller -D -F -n jutils -c jutils_cli.py
+	pyinstaller -D -F -n jlabutils -c jlabutils_cli.py
 clean:
 	rm -rf ${DIST_DIR} ${BUILD_DIR} *.egg-info
-	rm -rf build dist jutils.spec
+	rm -rf build dist jlabutils.spec
 
 test: unittest
 

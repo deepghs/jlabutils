@@ -1,9 +1,9 @@
-jutils.entry.dispatch
+jlabutils.entry.dispatch
 ================================
 
-.. currentmodule:: jutils.entry.dispatch
+.. currentmodule:: jlabutils.entry.dispatch
 
-.. automodule:: jutils.entry.dispatch
+.. automodule:: jlabutils.entry.dispatch
 
 
 print_version
@@ -13,10 +13,10 @@ print_version
 
 
 
-jutilcli
+jlabutilcli
 ----------------------------------------
 
-.. autofunction:: jutilcli
+.. autofunction:: jlabutilcli
 
 
 

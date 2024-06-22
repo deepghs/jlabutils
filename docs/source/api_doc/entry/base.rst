@@ -1,9 +1,9 @@
-jutils.entry.base
+jlabutils.entry.base
 ================================
 
-.. currentmodule:: jutils.entry.base
+.. currentmodule:: jlabutils.entry.base
 
-.. automodule:: jutils.entry.base
+.. automodule:: jlabutils.entry.base
 
 
 CONTEXT_SETTINGS

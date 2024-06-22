@@ -1,7 +1,7 @@
 import pytest
 from hbutils.testing import capture_output
 
-from jutils.utils import tqdm
+from jlabutils.utils import tqdm
 
 
 @pytest.mark.unittest

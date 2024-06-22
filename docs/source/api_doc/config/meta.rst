@@ -1,9 +1,9 @@
-jutils.config.meta
+jlabutils.config.meta
 ==========================
 
-.. currentmodule:: jutils.config.meta
+.. currentmodule:: jlabutils.config.meta
 
-.. automodule:: jutils.config.meta
+.. automodule:: jlabutils.config.meta
 
 
 \_\_TITLE\_\_

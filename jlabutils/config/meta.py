@@ -1,10 +1,10 @@
 """
 Overview:
-    Meta information for jutils package.
+    Meta information for jlabutils package.
 """
 
-#: Title of this project (should be `jutils`).
-__TITLE__ = 'jutils'
+#: Title of this project (should be `jlabutils`).
+__TITLE__ = 'jlabutils'
 
 #: Version of this project.
 __VERSION__ = '0.0.1'

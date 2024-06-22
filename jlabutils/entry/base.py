@@ -117,7 +117,7 @@ def command_wrap():
             except KeyboardInterrupt:
                 raise KeyboardInterrupted
             except BaseException as err:
-                click.secho('Unexpected error found when running jutils!', fg='red', file=sys.stderr)
+                click.secho('Unexpected error found when running jlabutils!', fg='red', file=sys.stderr)
                 print_exception(err, partial(click.secho, fg='red', file=sys.stderr))
                 sys.exit(0x1)
 

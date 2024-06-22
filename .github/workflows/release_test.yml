@@ -129,44 +129,44 @@ jobs:
       - name: Get package version
         shell: bash
         run: |
-          python -c 'from jutils.config.meta import __VERSION__;print(__VERSION__)'
-          echo "PACKAGE_VERSION=$(python -c 'from jutils.config.meta import __VERSION__;print(__VERSION__)')" >> $GITHUB_ENV
+          python -c 'from jlabutils.config.meta import __VERSION__;print(__VERSION__)'
+          echo "PACKAGE_VERSION=$(python -c 'from jlabutils.config.meta import __VERSION__;print(__VERSION__)')" >> $GITHUB_ENV
           echo "GIT_COMMIT_ID=$(echo ${GITHUB_SHA} | cut -c1-7)" >> $GITHUB_ENV
           echo "PYTHON_VERSION=$(python -V | xargs -n 1 | tail -1)" >> $GITHUB_ENV
           echo "CPU_ARCH=$(uname -m)" >> $GITHUB_ENV
       - name: Get CLI name
         shell: bash
         run: |
-          echo "ZIP_NAME=jutils-v${{ env.PACKAGE_VERSION }}-${{ env.OS_NAME }}-${{ env.CPU_ARCH }}-${{ env.GIT_COMMIT_ID }}-standalone" >> $GITHUB_ENV
-          echo "CLI_NAME=jutils-v${{ env.PACKAGE_VERSION }}-${{ env.OS_NAME }}-${{ env.CPU_ARCH }}" >> $GITHUB_ENV
+          echo "ZIP_NAME=jlabutils-v${{ env.PACKAGE_VERSION }}-${{ env.OS_NAME }}-${{ env.CPU_ARCH }}-${{ env.GIT_COMMIT_ID }}-standalone" >> $GITHUB_ENV
+          echo "CLI_NAME=jlabutils-v${{ env.PACKAGE_VERSION }}-${{ env.OS_NAME }}-${{ env.CPU_ARCH }}" >> $GITHUB_ENV
       - name: Build standalone cli on Linux and MacOS
         if: ${{ env.OS_NAME != 'Windows' }}
         shell: bash
         run: |
           make build
           mkdir -p dist/${{ env.CLI_NAME }}
-          cp dist/jutils dist/${{ env.CLI_NAME }}/jutils
+          cp dist/jlabutils dist/${{ env.CLI_NAME }}/jlabutils
           cd dist
           zip -r ${{ env.ZIP_NAME }}.zip ${{ env.CLI_NAME }}
           cd ..
           ls -al dist
-          dist/jutils -v
-          dist/jutils -h
+          dist/jlabutils -v
+          dist/jlabutils -h
       - name: Build standalone CLI on Windows
         if: ${{ env.OS_NAME == 'Windows' }}
         shell: bash
         run: |
           make build
           mkdir -p dist/${{ env.CLI_NAME }}
-          cp dist/jutils.exe dist/${{ env.CLI_NAME }}/jutils.exe
+          cp dist/jlabutils.exe dist/${{ env.CLI_NAME }}/jlabutils.exe
           cd dist
           zip -r ${{ env.ZIP_NAME }}.zip ${{ env.CLI_NAME }}
           cd ..
           ls -al dist
-          dist/jutils -v
-          dist/jutils -h
+          dist/jlabutils -v
+          dist/jlabutils -h
       - name: Upload packed files to artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: jutils-v${{ env.PACKAGE_VERSION }}-${{ env.OS_NAME }}-${{ env.CPU_ARCH }}-${{ env.GIT_COMMIT_ID }}
+          name: jlabutils-v${{ env.PACKAGE_VERSION }}-${{ env.OS_NAME }}-${{ env.CPU_ARCH }}-${{ env.GIT_COMMIT_ID }}
           path: ./dist/*
