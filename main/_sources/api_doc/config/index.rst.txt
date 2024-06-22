@@ -1,9 +1,9 @@
-jutils.config
+jlabutils.config
 =====================
 
-.. currentmodule:: jutils.config
+.. currentmodule:: jlabutils.config
 
-.. automodule:: jutils.config
+.. automodule:: jlabutils.config
 
 
 .. toctree::

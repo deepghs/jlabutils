@@ -1,9 +1,9 @@
-jutils.entry.cli
+jlabutils.entry.cli
 ================================
 
-.. currentmodule:: jutils.entry.cli
+.. currentmodule:: jlabutils.entry.cli
 
-.. automodule:: jutils.entry.cli
+.. automodule:: jlabutils.entry.cli
 
 
 cli

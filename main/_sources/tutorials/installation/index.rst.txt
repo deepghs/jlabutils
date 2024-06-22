@@ -1,19 +1,19 @@
 Installation
 ===================
 
-jutils is currently hosted on PyPI. It required python >= 3.8.
+jlabutils is currently hosted on PyPI. It required python >= 3.8.
 
-You can simply install jutils from PyPI with the following command:
+You can simply install jlabutils from PyPI with the following command:
 
 .. code:: shell
 
-    pip install jutils
+    pip install jlabutils
 
 You can also install with the newest version through GitHub:
 
 .. code:: shell
 
-    pip install -U git+https://github.com/deepghs/jutils@main
+    pip install -U git+https://github.com/deepghs/jlabutils@main
 
 You can check your installation by the following python \
 script:
@@ -29,5 +29,5 @@ is successful.
     :language: text
     :linenos:
 
-jutils is still under development, you can also check out the \
-documents in stable version through `https://deepghs.github.io/jutils/main/index.html <https://deepghs.github.io/jutils/main/index.html>`_.
+jlabutils is still under development, you can also check out the \
+documents in stable version through `https://deepghs.github.io/jlabutils/main/index.html <https://deepghs.github.io/jlabutils/main/index.html>`_.
